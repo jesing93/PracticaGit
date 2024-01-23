@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22f6f0d40eee00c4e9267dcd5219d154, type: 3}
-  m_Name: Road
+  m_Name: CasaDeJesing
   m_EditorClassIdentifier: 
-  cost: 10
-  costPerTurn: 2
-  prefab: {fileID: 1677813695698764010, guid: d19497fbc1cb06549bf0800aa04e27fd, type: 3}
-  population: 0
-  jobs: 0
-  food: 0
+  cost: 5000000
+  costPerTurn: 400
+  prefab: {fileID: 5404571911674146631, guid: b86669d6fe28c8d4ea1dd3f8f48f3b91, type: 3}
+  population: 1
+  jobs: 1
+  food: -100
