@@ -91,8 +91,9 @@ public class City : MonoBehaviour
     public void OnRemoveBuilding(Building building)
     {
         buildings.Remove(building);
-
-        maxPopulation-= building.preset.population;
+        //Change: now you get a third of the money you spent ont the building that you are removing
+        money += building.preset.cost/3;
+        maxPopulation -= building.preset.population;
         maxJobs-= building.preset.jobs;
         maxElectricity += building.preset.electricity;
 
@@ -153,7 +154,8 @@ public class City : MonoBehaviour
 
     private void CalculateMoney()
     {
-        money += curJobs * incomePerJob;
+        //Change: you only get IVA as income,simulating that the people have their own money 
+        money += (int) (curJobs * (incomePerJob - incomePerJob*0.21));
         foreach(Building building in buildings)
         {
             money -= building.preset.costPerTurn;
