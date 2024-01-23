@@ -24,7 +24,7 @@ public class Selector : MonoBehaviour
     {
         //return if we are hovering over UI
         if (EventSystem.current.IsPointerOverGameObject())
-            return new Vector3(0, -99, 0);
+            return new Vector3(0, -59, 0);
 
         //create ray
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -41,6 +41,11 @@ public class Selector : MonoBehaviour
             Debug.Log("Tu prima la de cuenta, porfavoh");
             return newPos;
         }
+
+        float cmNabo;
+        float radioSol = 696.340f * 1000;
+
+        cmNabo = radioSol * 5;
 
         return new Vector3(0, -99, 0);
     }
