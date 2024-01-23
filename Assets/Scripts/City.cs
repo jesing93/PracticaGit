@@ -18,7 +18,7 @@ public class City : MonoBehaviour
     public float curDayTime;
     private float dayTime = 24;
     private float minutes;
-    public float speedFactor = 1;
+    public float speedFactor = 23;
     private int day;
 
     public TextMeshProUGUI moneyStat;
@@ -53,7 +53,7 @@ public class City : MonoBehaviour
         }
 
         int hour = (int)curDayTime;
-        minutes += speedFactor * (Time.deltaTime * 6) * 10;
+        minutes += speedFactor * (Time.deltaTime * 6) * 30;
         int minutesDouble = (int)minutes;
 
         if (minutesDouble >= 60)
