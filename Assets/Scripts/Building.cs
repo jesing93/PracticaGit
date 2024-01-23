@@ -6,6 +6,8 @@ public class Building : MonoBehaviour
 {
     public BuildingPresets preset;
     public GameObject sillaGeimin;
+    public GameObject sillaNormal;
+    public bool luces;
 
 
     public void Update()
@@ -18,6 +20,8 @@ public class Building : MonoBehaviour
         {
             sillaGeimin = null;
         }
+
+        if (luces) sillaNormal = sillaGeimin;
     }
 
     private void FixedUpdate()
