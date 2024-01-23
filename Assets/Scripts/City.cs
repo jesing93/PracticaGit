@@ -14,6 +14,9 @@ public class City : MonoBehaviour
     public int maxJobs;
     public int maxPopulation;
     public int incomePerJob;
+    public int curElectricity;
+    public int maxElectricity;
+
     [Header("Time")]
     public float curDayTime;
     private float dayTime = 24;
@@ -27,6 +30,8 @@ public class City : MonoBehaviour
     public TextMeshProUGUI jobStat;
     public TextMeshProUGUI dayStat;
     public TextMeshProUGUI timeStat;
+    public TextMeshProUGUI electricityStat;
+
 
     public List<Building> buildings = new();
 
@@ -75,6 +80,7 @@ public class City : MonoBehaviour
         money -= building.preset.cost;
         maxPopulation += building.preset.population;
         maxJobs += building.preset.jobs;
+        maxElectricity -= building.preset.electricity;
         UpdateStatsText();
     }
 
@@ -88,6 +94,7 @@ public class City : MonoBehaviour
 
         maxPopulation-= building.preset.population;
         maxJobs-= building.preset.jobs;
+        maxElectricity += building.preset.electricity;
 
         Destroy(building.gameObject);
         UpdateStatsText();
@@ -100,6 +107,7 @@ public class City : MonoBehaviour
         popStat.text = string.Format("Population: {0}/{1}", new object[2] {curPopulation, maxPopulation});
         jobStat.text = string.Format("Jobs: {0}/{1}", new object[2] { curJobs, maxJobs });
         dayStat.text = string.Format("Day: {0}", day);
+        electricityStat.text = string.Format("Electricity: {0}/{1}", new object)
     }
 
     public void NextDay()
