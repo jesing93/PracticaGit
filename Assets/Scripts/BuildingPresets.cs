@@ -12,4 +12,5 @@ public class BuildingPresets : ScriptableObject
     public int population;
     public int jobs;
     public int food;
+    public int noise;
 }
