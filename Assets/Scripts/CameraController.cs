@@ -15,11 +15,11 @@ public class CameraController : MonoBehaviour
 
     [Header("Camera zoom")]
     public float MinZoom = 5;
-    public float MaxZoom = 40;
+    public float MaxZoom = 3;
     public float zoomSpeed = 1;
 
-    private float curXRot = -50;
-    private float curZoom = 20;
+    private float curXRot = 30;
+    private float curZoom = 5;
     private float mouseX;
     private Vector2 moveInput;
     private bool isRotating;
