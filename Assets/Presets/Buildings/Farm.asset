@@ -15,7 +15,6 @@ MonoBehaviour:
   cost: 50
   costPerTurn: 10
   prefab: {fileID: 7526668491257680759, guid: 9c905eaf98de94942976ae5f1da07fb5, type: 3}
-  buildingMesh: {fileID: -5948088851325577991, guid: e3e267a5ba8145045acf236573562a5f, type: 3}
-  population: 5
+  population: 10
   jobs: 10
   food: 100

@@ -20,12 +20,11 @@ public class Selector : MonoBehaviour
     /// <summary>
     /// Get the tile that the mouse is hovering over
     /// </summary>
-    /// <returns></returns>
     public Vector3 GetCurTilePosition()
     {
         //return if we are hovering over UI
         if (EventSystem.current.IsPointerOverGameObject())
-            return new Vector3(0, -99, 0);
+            return new Vector3(0, -59, 0);
 
         //create ray
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -39,8 +38,14 @@ public class Selector : MonoBehaviour
 
             //round that up to the nearest full number (nearest meter)
             newPos = new(Mathf.CeilToInt(newPos.x), 0.0f, Mathf.CeilToInt(newPos.z));
+            Debug.Log("Tu prima la de cuenta, porfavoh");
             return newPos;
         }
+
+        float cmNabo;
+        float radioSol = 696.340f * 1000;
+
+        cmNabo = radioSol * 5;
 
         return new Vector3(0, -99, 0);
     }
