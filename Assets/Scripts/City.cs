@@ -8,3 +8,4 @@ public class City : MonoBehaviour
 {
 //There is no more city, it has been destroyed.
 }
+
