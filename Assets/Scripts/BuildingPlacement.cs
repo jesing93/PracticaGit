@@ -162,4 +162,7 @@ public class BuildingPlacement : MonoBehaviour
             placementIndicator.transform.Rotate(0, 90, 0);
         }
     }
+
+    //hello world
+
 }

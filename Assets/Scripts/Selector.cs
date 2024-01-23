@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class Selector : MonoBehaviour
 {
+    //this is the main camera
     private Camera mainCamera;
     public static Selector Instance;
     private LayerMask groundLayer;
