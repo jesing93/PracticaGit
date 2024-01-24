@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
+    //The building preset
     public BuildingPresets preset;
     public GameObject sillaGeimin;
     public GameObject sillaNormal;
