@@ -9,7 +9,7 @@ public class Selector : MonoBehaviour
     private Camera mainCamera;
     public static Selector Instance;
     private LayerMask groundLayer;
-
+    public int length;
     private void Awake()
     {
         Instance = this;
