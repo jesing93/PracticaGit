@@ -9,6 +9,7 @@ public class Selector : MonoBehaviour
     private Camera mainCamera;
     public static Selector Instance;
     private LayerMask groundLayer;
+    private GameObject pepinillos;
 
     private void Awake()
     {
